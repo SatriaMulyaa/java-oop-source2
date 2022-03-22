@@ -3,8 +3,26 @@ class Person {
     String address;
     final String country = "Indonesia";
 
-    void sayHello(String paramName){
-        System.out.println("hello " + paramName + " my name is " + name);
+
+    Person(String name, String address){
+        this.name = name;
+        this.address = address;
+    }
+
+    Person(String paramName){
+        this(paramName, null);
+    }
+
+    Person(){
+        this(null);
+    }
+
+    void sayHello(String name){
+        System.out.println("hello " + name+ " my name is " + this.name);
+    }
+
+    void sayHello(){
+        this.sayHello("bos");
     }
 
 }
