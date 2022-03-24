@@ -9,7 +9,7 @@ public class PolymorphismApp {
         employee = new VicePresident("Satria");
         employee.sayHello("Budi");
 
-        sayHello(new Employee("jiki"));
+        sayHello(new Employee("joki"));
         sayHello(new Manager("jiko"));
         sayHello(new VicePresident("jike"));
 
