@@ -15,7 +15,6 @@ public class PolymorphismApp {
 
 //        System.out.println(manager instanceof Employee);
 //        System.out.println(employee instanceof Manager);
-
     }
 
     static void sayHello(Employee employee) {
