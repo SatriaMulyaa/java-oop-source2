@@ -14,33 +14,33 @@ package programmer.zaman.now.data;
      }
 
 //     public boolean equals(Object o){
-//         if(o == this){
+//         // ini bisa true kalau misal bandingin dengan object yang sama
+//         if(this == o){
 //             return true;
 //         }
 //
 //         if(!(o instanceof Product)){
-//             return false;
+//            return false;
 //         }
 //
 //         Product product = (Product) o;
 //
 //         if(this.price != product.price){
-//            return false;
+//             return false;
 //         }
-//
-//         if(this.name != null){
-//             return this.name.equals(product.name);
-//         }else{
-//             return product.name == null;
-//         }
+//         return product.name != null? this.name.equals(product.name) : product.name == null;
 //
 //     }
 
-
      public boolean equals(Object o) {
+         System.out.println(this);
+         System.out.println(o);
          if (this == o) return true;
+
          if (o == null || getClass() != o.getClass()) return false;
 
+//         System.out.println(this);  object first
+//         System.out.println(o);   object second
          Product product = (Product) o;
 
          if (price != product.price) return false;
@@ -48,3 +48,4 @@ package programmer.zaman.now.data;
      }
 
  }
+
