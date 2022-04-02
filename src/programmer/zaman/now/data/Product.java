@@ -33,19 +33,35 @@ package programmer.zaman.now.data;
 //     }
 
      public boolean equals(Object o) {
-         System.out.println(this);
-         System.out.println(o);
          if (this == o) return true;
-
          if (o == null || getClass() != o.getClass()) return false;
 
-//         System.out.println(this);  object first
-//         System.out.println(o);   object second
          Product product = (Product) o;
 
          if (price != product.price) return false;
          return name != null ? name.equals(product.name) : product.name == null;
      }
+
+
+     public int hashCode() {
+         int result = name != null ? name.hashCode() : 0;
+         result = 31 * result + price;
+         return result;
+     }
+//     public boolean equals(Object o) {
+//         System.out.println(this);
+//         System.out.println(o);
+//         if (this == o) return true;
+//
+//         if (o == null || getClass() != o.getClass()) return false;
+//
+////         System.out.println(this);  object first
+////         System.out.println(o);   object second
+//         Product product = (Product) o;
+//
+//         if (price != product.price) return false;
+//         return name != null ? name.equals(product.name) : product.name == null;
+//     }
 
  }
 
