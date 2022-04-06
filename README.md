@@ -1,1 +1,3 @@
-# java-oop-source2
+# Learn Basic Java
+
+this is project basic java in channel : PZN
